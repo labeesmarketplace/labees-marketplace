@@ -29,10 +29,10 @@ import ProductFilterBar from "@/components/product-filter-bar"
 const hotPicks = [
   {
     id: "1",
-    name: "EDIT 02",
+    name: "Modern Navy Abaya",
     brand: "Lovah",
     price: 900,
-    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop",
+    image: "/products/casual-abaya-front.jpg",
     badge: "LATEST DROP",
     aiMatch: 94,
     rating: 4.8,
@@ -43,10 +43,10 @@ const hotPicks = [
   },
   {
     id: "2",
-    name: "NOUR",
+    name: "Elegant Black Abaya",
     brand: "Toned",
     price: 750,
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=300&h=400&fit=crop",
+    image: "/products/evening-dress-front.jpg",
     badge: "LATEST DROP",
     aiMatch: 91,
     rating: 4.9,
@@ -57,10 +57,10 @@ const hotPicks = [
   },
   {
     id: "3",
-    name: "YARA",
+    name: "Professional Burgundy Dress",
     brand: "Toned",
     price: 850,
-    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop",
+    image: "/products/professional-blazer-front.jpg",
     badge: "LATEST DROP",
     aiMatch: 87,
     rating: 4.7,
@@ -71,10 +71,10 @@ const hotPicks = [
   },
   {
     id: "4",
-    name: "EDIT 03",
+    name: "Casual Beige Dress",
     brand: "Lovah",
     price: 900,
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=300&h=400&fit=crop",
+    image: "/products/modest-maxi-dress-front.jpg",
     badge: "LATEST DROP",
     aiMatch: 89,
     rating: 4.6,
@@ -85,10 +85,10 @@ const hotPicks = [
   },
   {
     id: "5",
-    name: "ZARA Collection",
+    name: "Luxury Emerald Kaftan",
     brand: "Modest Wear",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop",
+    image: "/products/elegant-scarf.jpg",
     badge: "EXCLUSIVE",
     aiMatch: 96,
     rating: 4.9,
@@ -99,10 +99,10 @@ const hotPicks = [
   },
   {
     id: "6",
-    name: "LAYLA Abaya",
+    name: "Traditional Black Abaya",
     brand: "Heritage",
     price: 680,
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=300&h=400&fit=crop",
+    image: "/products/wide-leg-trousers-front.jpg",
     badge: "TRENDING",
     aiMatch: 88,
     rating: 4.6,
@@ -116,7 +116,7 @@ const hotPicks = [
     name: "Elegant Scarf",
     brand: "Chic Accessories",
     price: 120,
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=300&h=400&fit=crop",
+    image: "/products/elegant-scarf.jpg",
     badge: "NEW",
     aiMatch: 85,
     rating: 4.5,
@@ -130,7 +130,7 @@ const hotPicks = [
     name: "Glow Face Serum",
     brand: "BeautyLab",
     price: 200,
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&h=400&fit=crop",
+    image: "/products/leather-handbag.jpg",
     badge: "BEAUTY PICK",
     aiMatch: 90,
     rating: 4.7,
@@ -144,7 +144,7 @@ const hotPicks = [
     name: "Classic Loafers",
     brand: "StepUp",
     price: 350,
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=400&fit=crop",
+    image: "/products/classic-loafers.jpg",
     badge: "FOOTWEAR",
     aiMatch: 88,
     rating: 4.6,
@@ -205,7 +205,8 @@ const styleReels = [
     title: "5 Ways to Style Abayas",
     creator: "@modest_style_doha",
     views: "12.4K",
-    thumbnail: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=200&h=300&fit=crop",
+    thumbnail: "/products/casual-abaya-front.jpg",
+    video: "/reels/abaya-styling-ways.mp4",
     duration: "0:45",
   },
   {
@@ -213,7 +214,8 @@ const styleReels = [
     title: "Eid Outfit Ideas 2024",
     creator: "@fashionista_qatar",
     views: "8.7K",
-    thumbnail: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=200&h=300&fit=crop",
+    thumbnail: "/products/evening-dress-front.jpg",
+    video: "/reels/eid-outfit-ideas-2024.mp4",
     duration: "1:12",
   },
   {
@@ -221,7 +223,8 @@ const styleReels = [
     title: "Campus to Coffee Looks",
     creator: "@student_style_gcc",
     views: "15.2K",
-    thumbnail: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=200&h=300&fit=crop",
+    thumbnail: "/products/modest-maxi-dress-front.jpg",
+    video: "/reels/campus-coffee-looks.mp4",
     duration: "0:38",
   },
   {
@@ -229,7 +232,8 @@ const styleReels = [
     title: "Professional Hijab Styling",
     creator: "@hijab_pro_tips",
     views: "19.1K",
-    thumbnail: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=200&h=300&fit=crop",
+    thumbnail: "/products/professional-blazer-front.jpg",
+    video: "/reels/hijab-professional-styling.mp4",
     duration: "0:52",
   },
 ]
@@ -244,6 +248,7 @@ export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [selectedDesigner, setSelectedDesigner] = useState("All Designers")
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
   const { itemCount } = useCart()
   const { user } = useAuth()
 
@@ -301,10 +306,10 @@ export default function HomePage() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="relative hover:bg-teal-50 transition-all duration-300 hover:scale-105"
+                className="relative hover:bg-[#063A5B]/10 transition-all duration-300 hover:scale-105"
               >
                 <span className="text-lg">💬</span>
-                <Badge className="absolute -top-2 -right-2 w-5 h-5 p-0 flex items-center justify-center bg-teal-500 text-white text-xs animate-bounce">
+                <Badge className="absolute -top-2 -right-2 w-5 h-5 p-0 flex items-center justify-center bg-[#063A5B] text-white text-xs animate-bounce">
                   3
                 </Badge>
               </Button>
@@ -313,9 +318,9 @@ export default function HomePage() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="relative hover:bg-teal-50 transition-all duration-300 hover:scale-105"
+                className="relative hover:bg-[#063A5B]/10 transition-all duration-300 hover:scale-105"
               >
-                <ShoppingBag className="w-5 h-5 text-teal-600" />
+                <ShoppingBag className="w-5 h-5 text-[#063A5B]" />
                 {itemCount > 0 && (
                   <Badge className="absolute -top-2 -right-2 w-5 h-5 p-0 flex items-center justify-center bg-pink-500 text-white text-xs animate-bounce">
                     {itemCount}
@@ -324,7 +329,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <Link href="/profile">
-              <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer shadow-lg">
+              <div className="w-8 h-8 bg-[#063A5B] rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer shadow-lg">
                 <User className="w-4 h-4 text-white" />
               </div>
             </Link>
@@ -334,10 +339,10 @@ export default function HomePage() {
         {/* Search Bar */}
         <div className="px-4 pb-4">
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-teal-400" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#063A5B]/60" />
             <Input
               placeholder="Search styles, brands, or occasions..."
-              className="pl-10 pr-12 border-teal-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-200 transition-all rounded-full bg-white/80 backdrop-blur-sm"
+              className="pl-10 pr-12 border-[#063A5B]/20 focus:border-[#063A5B] focus:ring-2 focus:ring-[#063A5B]/20 transition-all rounded-full bg-white/80 backdrop-blur-sm"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -473,21 +478,23 @@ export default function HomePage() {
 
         {/* Style Inspiration Reels */}
         <div className="mb-8">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-6">
+          <h2 className="text-3xl font-bold text-[#063A5B] mb-6">
             Style Inspiration
           </h2>
           <div className="flex space-x-6 overflow-x-auto pb-4 scrollbar-hide">
             {styleReels.map((reel) => (
-              <div key={reel.id} className="flex-shrink-0 w-56 group cursor-pointer">
+              <div key={reel.id} className="flex-shrink-0 w-56 group cursor-pointer" onClick={() => setSelectedVideo(reel.video)}>
                 <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                  <img
-                    src={reel.thumbnail || "/placeholder.svg"}
-                    alt={reel.title}
+                  <video
+                    src={reel.video}
                     className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700"
+                    muted
+                    playsInline
+                    preload="metadata"
                   />
                   <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-xl">
-                      <Play className="w-8 h-8 text-teal-600 ml-1" />
+                      <Play className="w-8 h-8 text-[#063A5B] ml-1" />
                     </div>
                   </div>
                   <div className="absolute top-4 right-4 bg-black/80 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">
@@ -508,7 +515,7 @@ export default function HomePage() {
         {/* Trending Now */}
         <div>
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold text-[#063A5B]">
               Trending Now
             </h2>
             <div className="flex items-center text-sm text-amber-500 font-bold bg-amber-50 px-4 py-2 rounded-full">
@@ -554,6 +561,56 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Enhanced Video Modal */}
+      {selectedVideo && (
+        <div className="fixed inset-0 bg-black/95 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-in fade-in-0 duration-300" onClick={() => setSelectedVideo(null)}>
+          <div className="relative w-full max-w-5xl mx-auto animate-in zoom-in-95 duration-300">
+            {/* Close Button */}
+            <button 
+              onClick={() => setSelectedVideo(null)}
+              className="absolute -top-16 right-0 z-10 w-12 h-12 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:text-gray-200 transition-all duration-200 border border-white/20 hover:border-white/40"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            {/* Video Container */}
+            <div className="relative bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+              <video 
+                src={selectedVideo} 
+                controls 
+                autoPlay 
+                className="w-full h-auto max-h-[80vh] object-contain"
+                onClick={(e) => e.stopPropagation()}
+                controlsList="nodownload"
+                onLoadStart={() => console.log('Video loading...')}
+              >
+                Your browser does not support the video tag.
+              </video>
+              
+              {/* Video Info Overlay */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
+                <div className="text-white">
+                  <h3 className="text-lg font-bold mb-1">
+                    {styleReels.find(reel => reel.video === selectedVideo)?.title}
+                  </h3>
+                  <p className="text-white/80 text-sm">
+                    {styleReels.find(reel => reel.video === selectedVideo)?.creator} • 
+                    {styleReels.find(reel => reel.video === selectedVideo)?.views} views
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Loading Indicator */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="w-12 h-12 border-4 border-white/20 border-t-white rounded-full animate-spin opacity-50"></div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

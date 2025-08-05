@@ -232,21 +232,21 @@ export default function BrowseBrandsPage() {
         <CustomerSidebar />
         <main className="flex-1 flex flex-col">
           {/* Header */}
-          <div className="p-4 border-b border-teal-100 bg-white/80 backdrop-blur-sm">
+          <div className="p-4 border-b border-[#063A5B]/20 bg-white/80 backdrop-blur-sm">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <SidebarTrigger />
                 <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 bg-[#063A5B] rounded-lg flex items-center justify-center">
                     <Compass className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h1 className="text-xl font-bold text-teal-700">Browse Brands</h1>
-                    <p className="text-sm text-teal-600">Discover amazing modest fashion brands</p>
+                    <h1 className="text-xl font-bold text-[#063A5B]">Browse Brands</h1>
+                    <p className="text-sm text-[#063A5B]/80">Discover amazing modest fashion brands</p>
                   </div>
                 </div>
               </div>
-              <Badge className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white">
+              <Badge className="bg-[#063A5B] text-white">
                 <Users className="w-3 h-3 mr-1" />
                 {allBrands.length} Brands
               </Badge>
@@ -260,33 +260,33 @@ export default function BrowseBrandsPage() {
                 <div className="space-y-4">
                   {/* Search Bar */}
                   <div className="relative">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-teal-400" />
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-[#063A5B]/60" />
                     <Input
                       placeholder="Search brands, styles, or locations..."
-                      className="pl-10 pr-12 border-teal-200 focus:border-teal-400 focus:ring-2 focus:ring-teal-200 transition-all rounded-full bg-white/80"
+                      className="pl-10 pr-12 border-[#063A5B]/20 focus:border-[#063A5B] focus:ring-2 focus:ring-[#063A5B]/20 transition-all rounded-full bg-white/80"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                     />
                     <Button
                       size="sm"
                       variant="ghost"
-                      className="absolute right-1 top-1/2 transform -translate-y-1/2 hover:bg-teal-100"
+                      className="absolute right-1 top-1/2 transform -translate-y-1/2 hover:bg-[#063A5B]/10"
                     >
-                      <Filter className="w-4 h-4 text-teal-500" />
+                      <Filter className="w-4 h-4 text-[#063A5B]" />
                     </Button>
                   </div>
 
                   {/* Filter Tabs */}
                   <Tabs value={selectedCategory} onValueChange={setSelectedCategory}>
-                    <TabsList className="grid grid-cols-6 bg-teal-50">
+                    <TabsList className="grid grid-cols-6 bg-[#063A5B]/10">
                       {categories.map((category) => (
                         <TabsTrigger
                           key={category.id}
                           value={category.id}
-                          className="text-xs data-[state=active]:bg-teal-500 data-[state=active]:text-white"
+                          className="text-xs data-[state=active]:bg-[#063A5B] data-[state=active]:text-white"
                         >
                           {category.name}
-                          <Badge className="ml-1 bg-teal-200 text-teal-700 text-xs">
+                          <Badge className="ml-1 bg-[#063A5B]/20 text-[#063A5B] text-xs">
                             {category.count}
                           </Badge>
                         </TabsTrigger>
@@ -364,7 +364,7 @@ export default function BrowseBrandsPage() {
                               </Badge>
                             )}
                             {brand.aiPowered && (
-                              <Badge className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white text-xs">
+                              <Badge className="bg-[#063A5B] text-white text-xs">
                                 <Sparkles className="w-3 h-3 mr-1" />
                                 AI
                               </Badge>

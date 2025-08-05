@@ -33,9 +33,9 @@ const productData = {
   brand: "Noor Collection",
   price: 180,
   images: [
-    "/placeholder.svg?height=600&width=500&text=Modest+Maxi+Dress+Front",
-    "/placeholder.svg?height=600&width=500&text=Modest+Maxi+Dress+Side",
-    "/placeholder.svg?height=600&width=500&text=Modest+Maxi+Dress+Back",
+    "/products/modest-maxi-dress-front.jpg",
+    "/products/modest-maxi-dress-side.jpg",
+    "/products/modest-maxi-dress-back.jpg",
   ],
   colors: [
     { name: "Navy", value: "#003153" },

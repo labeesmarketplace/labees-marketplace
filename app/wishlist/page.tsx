@@ -267,22 +267,22 @@ export default function WishlistPage() {
         <CustomerSidebar />
         <main className="flex-1 flex flex-col">
           {/* Header */}
-          <div className="p-4 border-b border-teal-100 bg-white/80 backdrop-blur-sm">
+          <div className="p-4 border-b border-[#063A5B]/20 bg-white/80 backdrop-blur-sm">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <SidebarTrigger />
                 <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-rose-500 rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 bg-[#063A5B] rounded-lg flex items-center justify-center">
                     <Heart className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h1 className="text-xl font-bold text-pink-700">My Wishlist</h1>
-                    <p className="text-sm text-pink-600">Your saved fashion favorites</p>
+                    <h1 className="text-xl font-bold text-[#063A5B]">My Wishlist</h1>
+                    <p className="text-sm text-[#063A5B]/80">Your saved fashion favorites</p>
                   </div>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
-                <Badge className="bg-gradient-to-r from-pink-500 to-rose-500 text-white">
+                <Badge className="bg-[#063A5B] text-white">
                   <Heart className="w-3 h-3 mr-1" />
                   {wishlistItems.length} Items
                 </Badge>
@@ -290,7 +290,7 @@ export default function WishlistPage() {
                   variant="ghost"
                   size="sm"
                   onClick={() => setShowCollections(!showCollections)}
-                  className="text-pink-600"
+                  className="text-[#063A5B]"
                 >
                   <Grid className="w-4 h-4" />
                 </Button>
@@ -303,7 +303,7 @@ export default function WishlistPage() {
               {/* Quick Stats */}
               <div className="grid grid-cols-4 gap-4">
                 <Card className="p-4 bg-white/80 backdrop-blur-sm text-center">
-                  <div className="text-2xl font-bold text-pink-600">{wishlistItems.length}</div>
+                  <div className="text-2xl font-bold text-[#063A5B]">{wishlistItems.length}</div>
                   <div className="text-sm text-gray-600">Total Items</div>
                 </Card>
                 <Card className="p-4 bg-white/80 backdrop-blur-sm text-center">
@@ -331,20 +331,20 @@ export default function WishlistPage() {
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div className="flex items-center space-x-4">
                     <Tabs value={selectedCategory} onValueChange={setSelectedCategory}>
-                      <TabsList className="bg-pink-50">
-                        <TabsTrigger value="all" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                      <TabsList className="bg-[#063A5B]/10">
+                        <TabsTrigger value="all" className="data-[state=active]:bg-[#063A5B] data-[state=active]:text-white">
                           All
                         </TabsTrigger>
-                        <TabsTrigger value="trending" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                        <TabsTrigger value="trending" className="data-[state=active]:bg-[#063A5B] data-[state=active]:text-white">
                           Trending
                         </TabsTrigger>
-                        <TabsTrigger value="price-drop" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                        <TabsTrigger value="price-drop" className="data-[state=active]:bg-[#063A5B] data-[state=active]:text-white">
                           Price Drops
                         </TabsTrigger>
-                        <TabsTrigger value="in-stock" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                        <TabsTrigger value="in-stock" className="data-[state=active]:bg-[#063A5B] data-[state=active]:text-white">
                           In Stock
                         </TabsTrigger>
-                        <TabsTrigger value="out-stock" className="data-[state=active]:bg-pink-500 data-[state=active]:text-white">
+                        <TabsTrigger value="out-stock" className="data-[state=active]:bg-[#063A5B] data-[state=active]:text-white">
                           Out of Stock
                         </TabsTrigger>
                       </TabsList>
@@ -353,7 +353,7 @@ export default function WishlistPage() {
                     <select
                       value={sortBy}
                       onChange={(e) => setSortBy(e.target.value)}
-                      className="px-3 py-2 border border-pink-200 rounded-lg bg-white text-sm focus:border-pink-400 focus:ring-1 focus:ring-pink-200"
+                      className="px-3 py-2 border border-[#063A5B]/20 rounded-lg bg-white text-sm focus:border-[#063A5B] focus:ring-1 focus:ring-[#063A5B]/20"
                     >
                       <option value="recent">Recently Added</option>
                       <option value="price-low">Price: Low to High</option>
@@ -370,7 +370,7 @@ export default function WishlistPage() {
                         <Button
                           size="sm"
                           onClick={() => handleBulkAction("cart")}
-                          className="bg-pink-500 hover:bg-pink-600 text-white"
+                          className="bg-[#063A5B] hover:bg-[#063A5B]/90 text-white"
                         >
                           <ShoppingBag className="w-3 h-3 mr-1" />
                           Add to Cart

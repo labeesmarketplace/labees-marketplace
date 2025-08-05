@@ -13,14 +13,14 @@ const inventoryData = [
   {
     id: 1,
     sku: "BQ-BLZ-001",
-    name: "Modest Blazer",
+    name: "Business Navy Blazer",
     category: "Outerwear",
     sizes: { XS: 5, S: 12, M: 2, L: 8, XL: 0 },
     price: 180,
     tryOnViews: 1247,
     aiForecast: 92,
     status: "active",
-    image: "/placeholder.svg?height=60&width=60",
+    image: "/products/professional-blazer-front.jpg",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const inventoryData = [
     tryOnViews: 892,
     aiForecast: 78,
     status: "active",
-    image: "/placeholder.svg?height=60&width=60",
+    image: "/products/wide-leg-trousers-front.jpg",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const inventoryData = [
     tryOnViews: 634,
     aiForecast: 85,
     status: "low-stock",
-    image: "/placeholder.svg?height=60&width=60",
+    image: "/products/silk-hijab.jpg",
   },
 ]
 

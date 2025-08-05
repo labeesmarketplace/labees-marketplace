@@ -197,22 +197,22 @@ export default function StyleCommunityPage() {
         <CustomerSidebar />
         <main className="flex-1 flex flex-col">
           {/* Header */}
-          <div className="p-4 border-b border-teal-100 bg-white/80 backdrop-blur-sm">
+          <div className="p-4 border-b border-[#063A5B]/20 bg-white/80 backdrop-blur-sm">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <SidebarTrigger />
                 <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 bg-[#063A5B] rounded-lg flex items-center justify-center">
                     <Users className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h1 className="text-xl font-bold text-purple-700">Style Community</h1>
-                    <p className="text-sm text-purple-600">Connect, inspire, and discover</p>
+                    <h1 className="text-xl font-bold text-[#063A5B]">Style Community</h1>
+                    <p className="text-sm text-[#063A5B]/80">Connect, inspire, and discover</p>
                   </div>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
-                <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                <Badge className="bg-[#063A5B] text-white">
                   <Flame className="w-3 h-3 mr-1" />
                   Trending
                 </Badge>
